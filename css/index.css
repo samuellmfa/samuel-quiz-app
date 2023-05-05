@@ -1,0 +1,252 @@
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: rgb(237, 239, 244);
+  }
+  main { width: 100%; }
+}
+@import 'fonts.css';*
+{
+    box-sizing :border-box;
+    margin: 0;padding: 0;
+    background-color: transparent;
+}
+p{
+  color: rgb(233, 232, 233);
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  
+}
+html {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+
+._app_header{
+  background: rgb(37, 82, 82); ;
+  width: 100%;
+  height:70px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: rgb(233, 232, 233);
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  box-shadow: 4px 4px 4px 4px rgba(50, 54, 51, 0.8);
+  border-radius: 4px 0px;
+}
+._app_footer{
+  background: rgb(54, 102, 102); ;
+  width: auto;
+  height:60px;
+  margin-top: 10px;
+  margin-right: 15px;
+  margin-left: 15px;
+  color: rgb(233, 232, 233);
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  box-shadow: 4px 4px 4px 4px rgba(50, 54, 51, 0.8);
+  border-radius: 4px 0px;
+}
+.parent {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content:center;
+    list-style:none;
+    height: 770px;
+    gap: 3px 0px;
+  }
+  
+  .child {
+    background: rgb(53, 88, 88); ;
+    width: auto;
+    height:350px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    /* line-height: 150px; */
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px rgba(126, 130, 127, 0.8);
+    border-radius: 4px 0px;
+    position: relative;
+  }
+    .child_five {
+    background: rgb(68, 104, 104); ;
+    width: auto;
+    height:730px;
+    margin-top: 30px;
+    margin-right: 15px;
+    margin-left: 15px;
+    /* line-height: 150px; */
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    box-shadow: 4px 4px 4px 4px rgba(126, 130, 127, 0.8);
+    border-radius: 4px 0px;
+    position: relative;
+  }
+ 
+  .bookmark_one {
+    position: absolute;
+    z-index: 2; /* put .green-box above .dashed-box */
+    background: transparent;
+    left: 83%;
+    top: -10%;
+    opacity: 0.9;
+  }
+  .bookmark_two {
+    position: absolute;
+    z-index: 2; /* put .green-box above .dashed-box */
+    background: transparent;
+        left: 83%;
+    top: -5%;
+    opacity: 1;
+  }
+  .bookmark_three {
+    position: absolute;
+    z-index: 2; /* put .green-box above .dashed-box */
+    background: transparent;
+        left: 83%;
+    top: -3%;
+    opacity: 1;
+  }
+
+  /* Button for Profile Page*/
+
+  .btn {
+    background-color: rgb(8, 36, 63); /* Blue background */
+    border:2px; /* Remove borders */
+    color: white; /* White text */
+    padding: 12px 16px; /* Some padding */
+    font-size: 10px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    box-shadow: 1px 1px 1px 1px rgba(116, 229, 144, 0.5);
+    border-radius: 10px ;
+
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: rgb(103, 125, 193);
+  }
+
+/* Toggle button holder*/
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #1d85da;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #1570bb;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*End of Toggle button*/
+
+
+/*new trial of flex box */
+.wrapper {
+  display: flex;  
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center; 
+  gap: 20px;
+}
+
+.wrapper > * {
+  padding: 20px;
+  flex: 1 200%;
+}
+
+.header {
+  background: rgb(70, 93, 93); 
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px 3px rgba(116, 229, 144, 0.5);
+  color: white;
+}
+
+.footer {
+  background: rgb(70, 93, 93);
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px 1px rgba(116, 229, 144, 0.5);
+}
+
+.main {
+  text-align: left;
+  background: rgb(98, 133, 133); ;
+  box-shadow: 3px 3px 3px 3px rgba(116, 229, 144, 0.5);
+  border-radius: 3px;
+  position: relative;
+
+}
+
+@media all and (min-width: 600px) {
+  .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+  .main    { flex: 3 0px; }
+  .main    { order: 2; }
+  .footer  { order: 4; }
+}
+
+body {
+  padding: 3em; 
+}
